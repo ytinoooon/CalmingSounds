@@ -1,4 +1,4 @@
-<script>
+
     const audioFiles = [
         { name: "Forest", path: "./samples/forest_bird.wav" },
         { name: "Ocean", path: "./samples/ocean_waves.wav" },
@@ -172,4 +172,4 @@
         visRaf = null;
         visualizer.innerHTML = '';
     }
-</script>
+
