@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#play-pause {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #2c2c2e;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 32px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+#play-pause:hover {
+    background: #1c1c1e;
+    border-color: #ffffff;
+}
+
+#play-pause .play-icon,
+#play-pause .pause-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    fill: #ffffff;
+    transition: opacity 0.2s ease;
+}
+
+#play-pause .pause-icon {
+    opacity: 0;
+}
+
+#play-pause.playing .play-icon {
+    opacity: 0;
+}
+
+#play-pause.playing .pause-icon {
+    opacity: 1;
+}
+
+#presets {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.preset-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: #2c2c2e;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.preset-btn:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+#visualizer {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 32px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+#visualizer:hover {
+    opacity: 1;
+}
+
+.slider-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+label {
+    flex: 1;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 0.85;
+}
+
+input[type="range"] {
+    flex: 2;
+    height: 2px;
+    background: #2c2c2e;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+    transform: scale(1.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+    transform: scale(1.2);
+}
+
+@media (max-width: 400px) {
+    #content {
+        padding: 24px 12px;
+    }
+
+    .preset-btn {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+}

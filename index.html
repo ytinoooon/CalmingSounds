@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/tone@14.7.77/build/Tone.js"></script>
+    <title>Sounds</title>
+</head>
+<body>
+    <div id="content">
+        <button id="play-pause" aria-label="Play/Pause">
+            <svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="pause-icon" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+        </button>
+        <div id="presets">
+            <button class="preset-btn" data-preset="relax">Calm</button>
+            <button class="preset-btn" data-preset="focus">Focus</button>
+            <button class="preset-btn" data-preset="sleep">Sleep</button>
+            <button class="preset-btn" data-preset="reset">Reset</button>
+        </div>
+        <div id="visualizer"></div>
+        <div id="sliders"></div>
+    </div>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
