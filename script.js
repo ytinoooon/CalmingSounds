@@ -9,7 +9,7 @@ const audioFiles = [
     { name: "River", path: "./samples/river_flowing.wav" },
     { name: "Hike", path: "./samples/mountain_hike.wav" },
     { name: "Melody", path: "./samples/inner_peace.mp3" },
-    { name: "Delta", path: "./samples/binaural_delta.wav" }
+    { name: "Delta", path: "https://github.com/ytinoooon/CalmingSounds/blob/main/samples/binaural_delta.mp3" }
 ];
 // Define presets
 const presets = {
