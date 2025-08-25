@@ -1,14 +1,14 @@
 
     const audioFiles = [
-        { name: "Forest", path: "./samples/forest_bird.wav" },
-        { name: "Ocean", path: "./samples/ocean_waves.wav" },
-        { name: "Fire", path: "./samples/fire.mp3" },
-        { name: "Rain", path: "./samples/rain.wav" },
-        { name: "Wind", path: "./samples/wind.wav" },
-        { name: "Noise", path: "./samples/white_noise.mp3" },
-        { name: "River", path: "./samples/river_flowing.wav" },
-        { name: "Hike", path: "./samples/mountain_hike.wav" },
-        { name: "Melody", path: "./samples/inner_peace.mp3" },
+        { name: "Forest", path: "CalmingSounds/samples/forest_bird.wav" },
+        { name: "Ocean", path: "CalmingSounds/samples/ocean_waves.wav" },
+        { name: "Fire", path: "CalmingSounds/samples/fire.mp3" },
+        { name: "Rain", path: "CalmingSounds/samples/rain.wav" },
+        { name: "Wind", path: "CalmingSounds/samples/wind.wav" },
+        { name: "Noise", path: "CalmingSounds/samples/white_noise.mp3" },
+        { name: "River", path: "CalmingSounds/samples/river_flowing.wav" },
+        { name: "Hike", path: "CalmingSounds/samples/mountain_hike.wav" },
+        { name: "Melody", path: "CalmingSounds/samples/inner_peace.mp3" },
     ];
 
     const presets = {
