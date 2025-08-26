@@ -168,3 +168,12 @@ function stopVisualizer() {
     visRaf = null;
     visualizer.innerHTML = '';
 }
+
+playPauseBtn.addEventListener('click', async () => {
+    if (!audioContextStarted) {
+        await Tone.start();  // <-- runs after real user click
+        audioContextStarted = true;
+    }
+    ...
+});
+
